@@ -1,0 +1,171 @@
+[09:08:43] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.3+9-LTS; Microsoft Microsoft-9388422) on Linux 6.5.0-1022-azure (amd64)
+[09:08:43] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.1-33-master@64c9ee6 (2024-08-17T21:46:09Z) for Minecraft 1.21.1
+[09:08:43] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[09:08:43] [ServerMain/INFO]: [PluginInitializerManager] Initialized 7 plugins
+[09:08:43] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (7):
+ - ExcellentCrates (5.3.1), ProtocolLib (5.2.0-SNAPSHOT-679), TabListPing (1.06), ViaBackwards (5.0.3), ViaVersion (5.0.3), nightcore (2.6.3), voicechat (2.5.20)
+[09:08:47] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09:08:49] [ServerMain/INFO]: Loaded 1290 recipes
+[09:08:49] [ServerMain/INFO]: Loaded 1399 advancements
+[09:08:49] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[09:08:49] [Server thread/INFO]: Loading properties
+[09:08:49] [Server thread/INFO]: This server is running Paper version 1.21.1-33-master@64c9ee6 (2024-08-17T21:46:09Z) (Implementing API version 1.21.1-R0.1-SNAPSHOT)
+[09:08:50] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[09:08:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:08:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:08:51] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[09:08:51] [Server thread/INFO]: Default game type: SURVIVAL
+[09:08:51] [Server thread/INFO]: Generating keypair
+[09:08:51] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:08:51] [Server thread/INFO]: Using epoll channel type
+[09:08:51] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[09:08:51] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[09:08:52] [Server thread/INFO]: [SpigotLibraryLoader] [nightcore] Loading 2 libraries... please wait
+[09:08:52] [Server thread/INFO]: [SpigotLibraryLoader] [nightcore] Loaded library /workspaces/Sever-mc/libraries/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar
+[09:08:52] [Server thread/INFO]: [SpigotLibraryLoader] [nightcore] Loaded library /workspaces/Sever-mc/libraries/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar
+[09:08:52] [Server thread/INFO]: [SpigotLibraryLoader] [nightcore] Loaded library /workspaces/Sever-mc/libraries/it/unimi/dsi/fastutil-core/8.5.13/fastutil-core-8.5.13.jar
+[09:08:53] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.0.3
+[09:08:53] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.3 is now loaded. Registering protocol transformers and injecting...
+[09:08:54] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[09:08:54] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[09:08:55] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[09:08:55] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[09:08:56] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.2.0-SNAPSHOT-679
+[09:08:56] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.1) has not yet been tested! Proceed with caution.
+[09:08:58] [Server thread/ERROR]: [ProtocolLib] Assuming package version: v1_21_R1
+[09:08:58] [Server thread/ERROR]:   [ProtocolLib] INTERNAL ERROR: Cannot load ProtocolLib.
+  If this problem hasn't already been reported, please open a ticket
+  at https://github.com/dmulloy2/ProtocolLib/issues with the following data:
+  Stack Trace:
+  java.lang.IllegalArgumentException: Unable to find a field that matches {modifiers=[required: 10000, banned: 1000], type={ type input instanceof interface java.util.Map }}
+  	at ProtocolLib.jar//com.comphenix.protocol.reflect.FuzzyReflection.getField(FuzzyReflection.java:352)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.createNewRegister(PacketRegistry.java:183)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.initialize(PacketRegistry.java:334)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.getClientPacketTypes(PacketRegistry.java:369)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterManager.<init>(PacketFilterManager.java:120)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterBuilder.build(PacketFilterBuilder.java:121)
+  	at ProtocolLib.jar//com.comphenix.protocol.ProtocolLib.onLoad(ProtocolLib.java:183)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18)
+  	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39)
+  	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40)
+  	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546)
+  	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292)
+  	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+  	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+  	at java.base/java.lang.Thread.run(Thread.java:1583)
+  Dump:
+  Parameters: 
+    [NULL]
+  Sender:
+    com.comphenix.protocol.ProtocolLib@21323a86[
+      statistics=<null>
+      packetTask=<null>
+      tickCounter=0
+      configExpectedMod=-1
+      updater=com.comphenix.protocol.updater.SpigotUpdater@3bf6245a
+      redirectHandler=<null>
+      scheduler=com.comphenix.protocol.scheduler.DefaultScheduler@ba0dfa8
+      commandProtocol=<null>
+      commandPacket=<null>
+      commandFilter=<null>
+      packetLogging=<null>
+      skipDisable=false
+      isEnabled=false
+      loader=io.papermc.paper.plugin.manager.DummyBukkitPluginLoader@4921cc7b
+      server=CraftServer{serverName=Paper,serverVersion=1.21.1-33-64c9ee6,minecraftVersion=1.21.1}
+      file=plugins/.paper-remapped/ProtocolLib.jar
+      description=org.bukkit.plugin.PluginDescriptionFile@32a8a9fe
+      pluginMeta=org.bukkit.plugin.PluginDescriptionFile@32a8a9fe
+      dataFolder=plugins/ProtocolLib
+      classLoader=PluginClassLoader{plugin=ProtocolLib v5.2.0-SNAPSHOT-679, pluginEnabled=false, url=plugins/.paper-remapped/ProtocolLib.jar}
+      naggable=true
+      newConfig=YamlConfiguration[path='', root='YamlConfiguration']
+      configFile=plugins/ProtocolLib/config.yml
+      logger=com.destroystokyo.paper.utils.PaperPluginLogger@55233290
+      lifecycleEventManager=io.papermc.paper.plugin.lifecycle.event.PaperLifecycleEventManager@37f51355
+      allowsLifecycleRegistration=true
+    ]
+  Version:
+    ProtocolLib v5.2.0-SNAPSHOT-679
+  Java Version:
+    21.0.3
+  Server:
+    1.21.1-33-64c9ee6 (MC: 1.21.1)
+
+[09:08:58] [Server thread/INFO]: [nightcore] Loading server plugin nightcore v2.6.3
+[09:08:58] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.0.3
+[09:08:58] [Server thread/INFO]: [ExcellentCrates] Loading server plugin ExcellentCrates v5.3.1
+[09:08:58] [Server thread/INFO]: [TabListPing] Loading server plugin TabListPing v1.06
+[09:08:58] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.5.20
+[09:08:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:08:58] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
+[09:08:58] [Server thread/ERROR]: ******************************************************
+[09:08:58] [Server thread/ERROR]: *** ProtocolLib does not support plugin reloaders! ***
+[09:08:58] [Server thread/ERROR]: *** Please use the built-in reload command!        ***
+[09:08:58] [Server thread/ERROR]: ******************************************************
+[09:08:58] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
+[09:08:58] [Server thread/INFO]: [nightcore] Enabling nightcore v2.6.3
+[09:08:58] [Server thread/INFO]: [nightcore] Server Version: 1.21 ✔
+[09:08:58] [Server thread/INFO]: [nightcore] Entity Id Counter: OK ✔
+[09:08:59] [Server thread/INFO]: [nightcore] Item NBT Compress: OK ✔
+[09:08:59] [Server thread/WARN]: [nightcore] ========== WARNING ==========
+[09:08:59] [Server thread/WARN]: [nightcore] Enabled Mojang's DataFixer for ItemStacks to update/fix NBT structure from <= 1.20.4 to 1.20.6+
+[09:08:59] [Server thread/WARN]: [nightcore] This may significally affect server's performance.
+[09:08:59] [Server thread/WARN]: [nightcore] Please, re-save all configuration(s) using in-game GUI editor(s) (if there is any).
+[09:08:59] [Server thread/WARN]: [nightcore] Then disable this 'feature' in the config.yml of nightcore.
+[09:08:59] [Server thread/INFO]: [nightcore] Plugin loaded in 804 ms!
+[09:08:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[09:08:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[09:08:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[09:08:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[09:08:59] [Server thread/INFO]: Preparing level "world"
+[09:08:59] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[09:09:00] [Server thread/INFO]: Time elapsed: 1165 ms
+[09:09:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[09:09:00] [Server thread/INFO]: Time elapsed: 198 ms
+[09:09:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[09:09:00] [Server thread/INFO]: Time elapsed: 123 ms
+[09:09:00] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.3
+[09:09:01] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21 (767)
+[09:09:01] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.3
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] Enabling ExcellentCrates v5.3.1
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] Powered by nightcore
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] Read database configuration...
+[09:09:01] [Server thread/ERROR]: [ExcellentCrates] ProtocolLib is not working correctly.
+[09:09:01] [Server thread/ERROR]: [ExcellentCrates] Download the latest build at:
+[09:09:01] [Server thread/ERROR]: [ExcellentCrates] https://ci.dmulloy2.net/job/ProtocolLib/
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] No plugins are available to handle crate holograms.
+[09:09:01] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[09:09:01] [Server thread/INFO]: [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@50fd14d7
+[09:09:01] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] Registered currency: xp
+[09:09:01] [Server thread/INFO]: [ExcellentCrates] Registered currency: levels
+[09:09:02] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Loaded 8 crate openings.
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Loaded 0 crate keys.
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Loaded 4 rarities!
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Loaded 1 crates.
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Loaded 1 crate menus.
+[09:09:02] [Server thread/INFO]: [ExcellentCrates] Plugin loaded in 1569 ms!
+[09:09:02] [Server thread/INFO]: [TabListPing] Enabling TabListPing v1.06
+[09:09:02] [Server thread/INFO]: [TabListPing] Detected 1.21.1, using net.minecraft.network.protocol.common.ClientboundKeepAlivePacket & net.minecraft.network.protocol.common.ServerboundKeepAlivePacket
+[09:09:02] [Server thread/INFO]: [TabListPing] Metrics enabled if allowed by plugins/bStats/config.yml
+[09:09:02] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.20
+[09:09:02] [Server thread/INFO]: [voicechat] Initializing compatibility for Bukkit version 1.21.1-R0.1
+[09:09:02] [Server thread/INFO]: [voicechat] Compatibility version 18
+[09:09:02] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[09:09:02] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[09:09:03] [Server thread/INFO]: [spark] Starting background profiler...
+[09:09:03] [Server thread/INFO]: Done preparing level "world" (4.283s)
+[09:09:03] [Server thread/INFO]: Running delayed init tasks
+[09:09:03] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[09:09:03] [Server thread/INFO]: Done (20.987s)! For help, type "help"
+[09:09:03] [Server thread/INFO]: Timings Reset
+[09:09:03] [Server thread/INFO]: [voicechat] Loading plugins
+[09:09:03] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[09:09:03] [Server thread/INFO]: [voicechat] Initializing plugins
+[09:09:03] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[09:09:03] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[09:09:03] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'cnet-experiences.gl.at.ply.gg'
+[09:09:03] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 1659
